@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Trajan';
+    src: url('Assets/Trajan\ Pro\ Regular.ttf') format('truetype');
+    /* Ajoutez d'autres formats de fichier si nécessaire */
+}
+
+body {
+    font-family: 'Trajan', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5deb3; /* Fond couleur parchemin */
+}
+
+header {
+    background-color: rgb(153, 1, 0);
+    color: rgb(251, 189, 59); /* changer la couleur du texte en doré */
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajouter une ombre */
+    display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Aligner les éléments sur les extrémités */
+    align-items: center; /* Aligner verticalement */
+}
+
+.logo-container {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Aligner verticalement */
+}
+
+.logo-container img {
+    width: 100px; /* Taille du logo */
+    height: 100px; /* Taille du logo */
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 10px; /* Ajout de marge à gauche */
+}
+
+nav {
+    margin-top: 10px; /* Ajouter de l'espace entre le logo et la barre de navigation */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Supprimer la marge à droite du dernier élément */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(251, 189, 59); /* changer la couleur des liens en doré */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ajouter une ombre */
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 100px; /* Ajoute une marge en bas pour éviter que les boîtes touchent le footer */
+}
+
+#intro {
+    text-align: center;
+}
+
+#intro img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#livres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Pour répartir les boîtes sur deux colonnes */
+    margin-top: 20px;
+}
+
+.livre {
+    background-color: rgb(153, 1, 0); /* Boîtes des livres en rouge */
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: rgb(251, 189, 59); /* Texte des boîtes en doré */
+    overflow: auto; /* Permettre aux éléments de rester sur une ligne */
+    width: calc(50% - 20px); /* Largeur de chaque boîte, calculée pour deux colonnes avec espacement */
+    box-sizing: border-box; /* Pour inclure les marges et les bordures dans la largeur */
+}
+
+.livre img {
+    width: 100px; /* Définir la largeur à 100px */
+    height: 100px; /* Définir la hauteur à 100px */
+    float: left; /* Aligner l'image à gauche */
+    margin-right: 20px; /* Ajout de marge à droite */
+}
+
+.livre-details {
+    display: inline-block;
+}
+
+.livre h3 {
+    margin-top: 0; /* Supprimer la marge par défaut sur le titre */
+}
+
+.livre p {
+    margin-top: 10px; /* Ajouter de la marge en haut pour séparer le titre du descriptif */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
